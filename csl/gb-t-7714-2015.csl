@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" default-locale="zh-CN">
+  <info>
+    <title>GB/T 7714-2015</title>
+    <title-short>GBT7714</title-short>
+    <id>http://www.zotero.org/styles/gb-t-7714-2015</id>
+    <link href="http://www.zotero.org/styles/gb-t-7714-2015" rel="self"/>
+    <link href="http://www.cssn.gov.cn/standardDetailNo.action?no=34497" rel="documentation"/>
+    <author>
+      <name>CiteProc Team</name>
+    </author>
+    <category field="generic-base"/>
+    <summary>Chinese National Standard GB/T 7714-2015</summary>
+  </info>
+  <locale xml:lang="zh-CN">
+    <date form="text">
+      <date-part name="month" form="numeric-leading-zeros"/>
+      <date-part name="day" form="numeric-leading-zeros"/>
+      <date-part name="year"/>
+    </date>
+  </locale>
+  <macro name="author">
+    <names variable="author" delimiter=", ">
+      <name form="surname-first" name-as-sort-order="first" sort-separator=" ">
+        <name-part name="family" font-weight="normal"/>
+        <name-part name="given"/>
+      </name>
+      <et-al font-style="italic"/>
+    </names>
+  </macro>
+  <macro name="title">
+    <text variable="title"/>
+  </macro>
+  <macro name="publisher">
+    <text variable="publisher-place"/>
+    <text variable="publisher"/>
+  </macro>
+  <citation et-al-min="3" et-al-use-first="3" collapse="year">
+    <sort>
+      <key macro="author" names-min="3" names-use-first="3"/>
+      <key variable="year"/>
+    </sort>
+    <layout delimiter=", " prefix="[" suffix="]">
+      <text macro="author"/>
+      <text variable="year"/>
+      <text variable="title"/>
+    </layout>
+  </citation>
+  <bibliography et-al-min="3" et-al-use-first="3" entry-spacing="0" second-field-align="flush">
+    <sort>
+      <key macro="author" names-min="3" names-use-first="3"/>
+      <key variable="year" sort="descending"/>
+    </sort>
+    <layout>
+      <text macro="author"/>
+      <text variable="year"/>
+      <text variable="title"/>
+      <text variable="container-title" prefix=", " suffix="."/>
+      <text variable="volume" prefix=", vol. "/>
+      <text variable="page" prefix=", pp. "/>
+      <text variable="DOI" prefix="DOI: "/>
+    </layout>
+  </bibliography>
+</style>

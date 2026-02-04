@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Project specific
+*.db
+*.log
+app.log
+literature.db
+
+# Config files with sensitive data
+preferences.json
+app_config.json
+
+# Test data (personal documents)
+test/
+
+# Build artifacts
+build/
+# Keep dist/BioManager.exe but ignore other dist files
+dist/*.log
+dist/*.json
+dist/*.db
+
+# PyInstaller
+*.manifest
+*.spec
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
