@@ -6,11 +6,12 @@ BioManager 是一款本地文献管理工具，帮助科研人员管理论文、
 
 ### 论文管理
 - 自动扫描本地PDF文件，提取元数据（标题、作者、年份、期刊等）
+- 拖拽pdf文件到软件中，可以自动导入到当前数据库所在文件夹下并解析
 - **手动添加论文**：通过DOI或标题搜索，自动获取元数据，支持PDF下载
 - 自动查找DOI并补全文献信息（通过Crossref和OpenAlex）
 - 支持OCR识别扫描版PDF
 - 导出BibTeX、RIS、GB/T 7714格式引用
-- 期刊影响因子查询
+- 期刊影响因子查询（支持批量选中文献后，批量更新文献的影响因子信息）
 - 全文搜索功能
 
 ### 专利管理
@@ -31,7 +32,7 @@ BioManager 是一款本地文献管理工具，帮助科研人员管理论文、
 
 ## 截图
 
-（待添加）
+![image-20260204195923759](img\UI.png)
 
 ## 安装与使用
 
@@ -106,6 +107,8 @@ python app/app.py
 pip install pyinstaller
 pyinstaller build.spec
 ```
+
+Windows用户可以选择双击`build.bat`自行打包。
 
 打包后的文件位于 `dist/BioManager.exe`（Windows）。
 
